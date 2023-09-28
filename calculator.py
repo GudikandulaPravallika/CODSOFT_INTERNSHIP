@@ -3,12 +3,15 @@ import tkinter as tk
 from tkinter import font
 from tkinter import messagebox
 win=Tk()
-#title
+#Add Title and icon
 win.title("Calculator")
 win.geometry('400x400')
 b_title=Label(win,text="Calculator",font=font.Font(size=20))
+photo=PhotoImage(file="C://Users//miriy//OneDrive//Desktop//calsi.png")
+win.iconphoto(False, photo)
 b_title.pack(side="top")
 
+#Function to perform basic arithmetic oprations.
 def operate():
     no_1 = (value1.get())
     no_2 = (value2.get())
@@ -58,7 +61,7 @@ def operate():
     
         
 
-
+#add necessary buttons, textboxes.
 f=Frame(win)
 lab=Label(f,text="enter first value :",font=font.Font(size=15))
 lab.pack(side="left")
